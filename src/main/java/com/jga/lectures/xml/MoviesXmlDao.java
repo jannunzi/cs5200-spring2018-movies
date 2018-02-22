@@ -6,6 +6,7 @@ import java.io.IOException;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -26,6 +27,23 @@ public class MoviesXmlDao {
 			instance = new MoviesXmlDao();
 		}
 		return instance;
+	}
+	
+	public Library readLibraryOfMoviesFromXmlFileUsingJaxB(String xmlFileName) {
+		Library movieList = null;
+		try {
+			JAXBContext jaxbContext = 
+				    JAXBContext.newInstance(Library.class);
+			Unmarshaller jaxbUnmarshaller = 
+				    jaxbContext.createUnmarshaller();
+			File xmlFile = new File(baseDir + xmlFileName);
+			movieList = (Library) 
+				    jaxbUnmarshaller.unmarshal(xmlFile);
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return movieList;
 	}
 	
 	public void writeLibraryOfMoviesToXmlFileUsingJaxB(Library library, String xmlFileName) {

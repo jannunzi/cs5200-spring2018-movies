@@ -22,5 +22,11 @@ public class Library {
 	public Library() {
 		super();
 	}
-
+	public String toString() {
+		String str = "";
+		for(Movie movie : this.movies) {
+			str += movie;
+		}
+		return str;
+	}
 }

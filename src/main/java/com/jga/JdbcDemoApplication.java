@@ -27,16 +27,21 @@ public class JdbcDemoApplication {
 
 		
 		MoviesXmlDao xmlDao = MoviesXmlDao.getInstance();
-		
-		Movie movie1 = new Movie("123","movie 1", "plot 1", "poster 1");
-		Movie movie2 = new Movie("234","movie 2", "plot 2", "poster 2");
-		Collection<Movie> movieList = new ArrayList<Movie>();
-		movieList.add(movie1);
-		movieList.add(movie2);
-		Library library = new Library();
-		library.setMovies(movieList);
 
-		xmlDao.writeLibraryOfMoviesToXmlFileUsingJaxB(library, "movieLibrary.xml");
+		Library library = xmlDao.readLibraryOfMoviesFromXmlFileUsingJaxB("movieLibrary.xml");
+
+//		Movie movie1 = new Movie("123","movie 1", "plot 1", "poster 1");
+//		Movie movie2 = new Movie("234","movie 2", "plot 2", "poster 2");
+//		Collection<Movie> movieList = new ArrayList<Movie>();
+//		movieList.add(movie1);
+//		movieList.add(movie2);
+//		Library library = new Library();
+//		library.setMovies(movieList);
+
+		
+		System.out.println(library);
+		
+//		xmlDao.writeLibraryOfMoviesToXmlFileUsingJaxB(library, "movieLibrary.xml");
 		
 //		xmlDao.parseXmlFile("movies.xml");
 //		

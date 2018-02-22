@@ -12,6 +12,9 @@ public class Movie {
 	public String getImdbId() {
 		return imdbId;
 	}
+	public String toString() {
+		return title;
+	}
 	@XmlAttribute
 	public void setImdbId(String imdbId) {
 		this.imdbId = imdbId;
