@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+ <movie imdbId="tt0083658">
+  <title>Blade Runner</title>
+  <plot>A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.</plot>
+  <poster>https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg</poster>
+ </movie>
+ <movie imdbId="tt1856101">
+  <title>Blade Runner 2049</title>
+  <plot>A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.</plot>
+  <poster>https://images-na.ssl-images-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg</poster>
+ </movie>
+ <movie imdbId="123" rating="pg">
+  <title>pg movie 123 released on 2005</title>
+  <plot>plot 123</plot>
+  <poster>url123</poster>
+  <released>2005</released>
+ </movie>
+ <movie imdbId="234" rating="pg">
+  <title>pg movie 234 released on 2015</title>
+  <plot>plot 234</plot>
+  <poster>url234</poster>
+  <released>2015</released>
+ </movie>
+ <movie imdbId="345" rating="pg13">
+  <title>pg13 movie 345 released on 2005</title>
+  <plot>plot 345</plot>
+  <poster>url345</poster>
+  <released>2005</released>
+ </movie>
+ <movie imdbId="456" rating="pg13">
+  <title>pg13 movie 456 released on 2015</title>
+  <plot>plot 456</plot>
+  <poster>url456</poster>
+  <released>2015</released>
+ </movie>
+</movies>

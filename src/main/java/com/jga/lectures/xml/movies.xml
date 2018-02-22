@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<movies>
+ <movie imdbId="tt0083658">
+  <title>Blade Runner</title>
+  <plot>A blade runner must pursue...</plot>
+  <poster>https://bladerunner.jpg</poster>
+ </movie>
+ <movie imdbId="tt1856101">
+  <title>Blade Runner 2049</title>
+  <plot>A young blade runner's discovery..</plot>
+  <poster>https://bladerunner2049.jpg</poster>
+ </movie>
+</movies>

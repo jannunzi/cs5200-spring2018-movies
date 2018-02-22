@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <movies imdbId="123">
+        <plot>poster 1</plot>
+        <poster>plot 1</poster>
+        <title>movie 1</title>
+    </movies>
+    <movies imdbId="234">
+        <plot>poster 2</plot>
+        <poster>plot 2</poster>
+        <title>movie 2</title>
+    </movies>
+</library>

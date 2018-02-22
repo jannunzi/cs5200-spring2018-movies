@@ -1,0 +1,23 @@
+{
+  "name": "jdbc-demo",
+  "version": "1.0.0",
+  "description": "Follow along in the following YouTube [playlist](https://www.youtube.com/playlist?list=PL_GGiAMracOXmOAZbi67bvCTQXoyUrEo0)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jannunzi/cs5200-spring2018-movies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jannunzi/cs5200-spring2018-movies/issues"
+  },
+  "homepage": "https://github.com/jannunzi/cs5200-spring2018-movies#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="SimpleAngularOmdbClientApp">
+<head>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js">
+</script>
+<script src="app.js"></script>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body ng-controller="MovieController">
+<h1>Integrating with OMDB API with Angular</h1>
+
+<h2>Search</h2>
+<label for="keywordFld">Search Keyword</label>
+<input ng-model="keyword" id="keywordFld"/>
+<button ng-click="findMoviesByKeyword(keyword)">Search</button>
+
+<h2>Results</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>IMDb ID</th>
+		</tr>
+	</thead>
+	<tbody id="resultsTbl">
+		<tr ng-repeat="movie in movies"
+		    ng-click="searchMovieByImdb(movie.imdbId)">
+			<td>{{movie.Title}}</td>
+			<td>{{movie.imdbId}}</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
